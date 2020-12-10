@@ -1,10 +1,10 @@
 /* navbar styling*/
 a.navbar-brand{
-  margin-left: 10px;
-  padding: 10px;
+  margin-left: 15px;
+  padding: 15px;
   background-color: rgb(184, 64, 34);
   font-family: 'Times New Roman', Times, serif;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 /*footer styling*/
@@ -25,7 +25,7 @@ a.navbar-brand{
 h3{
   color:  rgb(184, 64, 34);
   font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 15px;
+  padding: 10px;
 }
 
 /* image styling*/
@@ -72,8 +72,8 @@ body{
 
 /* content styling*/
 .content {
-  padding-top: 50px;
-  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 90px;
   overflow: hidden;
 }
 
