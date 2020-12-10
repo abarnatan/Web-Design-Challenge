@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Temperature</title>
+  <title>Comparison</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -16,7 +16,6 @@
 <body>
 
   <!--Navbar setup-->
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand text-white" href="index.html">Latitude</a>
@@ -48,47 +47,36 @@
         </div>
     </nav>
     
-  <!--temprature content adjustments-->
-  <div class="container content">
-    <div class="row">
-        <div class="col-md-8">
-            <div class="col-md-12">
-                <h3>Max Temperature</h3>
-                <hr>
-                <img src="Resources/assets/Fig1.png" width="100%" alt="temperature">
-                <br>
-                <p>As expected, the weather becomes significantaly warmer as one approaches the equator (Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of the year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.</p>
+    <!--Add plots into container-->
+    <div class="container content bg-white">
+        <h3>Comparison: Latitude vs X</h3>
+        <hr>
+        <p>Click any plot to get an in-depth analysis!</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center">vs. Max Teperature</h3>
+                <a href="temperature.html"><img width="100%" src="Resources/assets/Fig1.png"></a>   
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-center">vs. Humidity</h3>
+                <a href="humidity.html"><img width="100%" src="Resources/assets/Fig2.png"></a>  
             </div>
         </div>
-        <!--viz container -->
-        <div class="col-md-4">
-            <div class="col-md-12">
-                <h3>Visualizations</h3>
-                <hr>
-                <div class="row">
-                    <div class="col-3 col-md-6">
-                        <a href="temperature.html"><img class="pic" src="Resources/assets/Fig1.png" width="100%" alt="temprature"></a>
-                    </div>
-                    
-                    <div class="col-3 col-md-6">
-                        <a href="humidity.html"><img src="Resources/assets/Fig2.png" width="100%" alt="humidity"></a>
-                    </div>
-                
-                    <div class="col-3 col-md-6">
-                        <a href="cloudiness.html"><img src="Resources/assets/Fig3.png" width="100%" alt="cloudiness"></a>
-                    </div>
-                    
-                    <div class="col-3 col-md-6">
-                        <a href="windspeed.html"><img src="Resources/assets/Fig4.png" width="100%" alt="windspeed"></a>
-                    </div>
-                </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center">vs. Cloudiness </h3>
+                <a href="cloudiness.html"><img width="100%" src="Resources/assets/Fig3.png"></a>   
             </div>
-        </div>            
-    </div>    
-</div>
-
-<!-- Footer -->
-<footer class="page-footer font-small footer-dark">
+            <div class="col-md-6">
+                <h3 class="text-center">vs. Wind Speed</h3>
+                <a href="windspeed.html"><img width="100%" src="Resources/assets/Fig4.png"></a>  
+            </div>
+        </div>   
+    </div>
+    
+   <!-- Footer -->
+  <footer class="page-footer font-small footer-dark">
     <div class="footer-holidays text-center py-3"> Happy Holidays!     
     </div>      
   </footer>
